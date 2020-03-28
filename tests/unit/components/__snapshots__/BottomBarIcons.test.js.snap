@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "borderRadius": 100,
+        "width": 100,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "paddingVertical": 8,
+      },
+      Object {
+        "paddingHorizontal": 8,
+      },
+      Object {
+        "backgroundColor": "#DAF0E2",
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Object {
+        "marginRight": 8,
+      }
+    }
+  >
+    <Icon
+      allowFontScaling={false}
+      color="#14A286"
+      name="home"
+      size={25}
+    />
+  </Component>
+  <TinyText
+    align=""
+    color="green"
+    text="Kioskos"
+    weight="medium"
+  />
+</Component>
+`;

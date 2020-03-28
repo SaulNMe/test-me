@@ -1,0 +1,134 @@
+[1mdiff --git a/app/screens/ChangePasswordScreen/ChangePasswordScreen.js b/app/screens/ChangePasswordScreen/ChangePasswordScreen.js[m
+[1mindex caf1eda..00d2631 100644[m
+[1m--- a/app/screens/ChangePasswordScreen/ChangePasswordScreen.js[m
+[1m+++ b/app/screens/ChangePasswordScreen/ChangePasswordScreen.js[m
+[36m@@ -10,14 +10,16 @@[m [mimport {[m
+ [m
+ import styles from './ChangePasswordScreenStyle';[m
+ import { Colors, ApplicationStyles } from 'qualificame-native/app/styles';[m
+[31m-import HeaderNavbar from 'qualificame-native/app/components/HeaderNavbar';[m
+[31m-import TitleText from 'qualificame-native/app/components/TitleText';[m
+[32m+[m
+[32m+[m[32mimport BackBtn from 'qualificame-native/app/components/BackBtn';[m
+ import BodyText from 'qualificame-native/app/components/BodyText';[m
+[31m-import LabeledInput from 'qualificame-native/app/components/LabeledInput';[m
+[32m+[m[32mimport AlertBtn from 'qualificame-native/app/components/AlertBtn';[m
+[32m+[m[32mimport ShowAlert from 'qualificame-native/app/components/ShowAlert';[m
+[32m+[m[32mimport TitleText from 'qualificame-native/app/components/TitleText';[m
+ import PrimaryBtn from 'qualificame-native/app/components/PrimaryBtn';[m
+[32m+[m[32mimport LabeledInput from 'qualificame-native/app/components/LabeledInput';[m
+ import SecondaryBtn from 'qualificame-native/app/components/SecondaryBtn';[m
+[31m-import AlertBtn from 'qualificame-native/app/components/AlertBtn';[m
+[31m-import BackBtn from 'qualificame-native/app/components/BackBtn';[m
+[32m+[m[32mimport HeaderNavbar from 'qualificame-native/app/components/HeaderNavbar';[m
+ import BtnLogOutContainer from 'qualificame-native/app/containers/BtnLogOutContainer';[m
+ [m
+ import ApiService from 'qualificame-native/app/services/ApiService';[m
+[36m@@ -29,6 +31,9 @@[m [mexport default class ChangePasswordScreen extends Component {[m
+ 	}[m
+ [m
+ 	state = {[m
+[32m+[m		[32mshowAlert: false,[m
+[32m+[m		[32malertHead: '',[m
+[32m+[m		[32malertBody: '',[m
+ 		oldPassword: '',[m
+ 		newPassword: '',[m
+ 		confirmPass: ''[m
+[36m@@ -39,7 +44,11 @@[m [mexport default class ChangePasswordScreen extends Component {[m
+ 			logout();[m
+ 			this.props.navigation.navigate('AuthLoading');[m
+ 		}, err => {[m
+[31m-			alert('No se logró cambiar la contraseña, inténtalo más tarde');[m
+[32m+[m			[32mthis.setState({[m
+[32m+[m				[32mshowAlert: true,[m
+[32m+[m				[32malertHead: 'No se logró cambiar la contraseña',[m
+[32m+[m				[32malertBody: 'Inténtalo más tarde'[m
+[32m+[m			[32m})[m
+ 		});[m
+ 	}[m
+ [m
+[36m@@ -151,6 +160,19 @@[m [mexport default class ChangePasswordScreen extends Component {[m
+ 							</View>[m
+ 						</View>[m
+ 					</SafeAreaView>[m
+[32m+[m					[32m{ this.state.showAlert &&[m[41m [m
+[32m+[m				[32m        <ShowAlert[m
+[32m+[m							[32mshow={this.state.showAlert}[m
+[32m+[m							[32mshowProgress={false}[m
+[32m+[m							[32mtitle={this.state.alertHead}[m
+[32m+[m							[32mmessage={this.state.alertBody}[m
+[32m+[m							[32mshowCancelButton={false}[m
+[32m+[m							[32mshowConfirmButton[m
+[32m+[m							[32mconfirmText='Ok'[m
+[32m+[m							[32mconfirmButtonColor={Colors.red}[m
+[32m+[m							[32monConfirmPressed={() => this.setState({showAlert: false, alertHead: '', alertBody: ''})}[m
+[32m+[m				[32m        />[m
+[32m+[m					[32m}[m
+ 				</View>[m
+ 			</TouchableWithoutFeedback>[m
+ 		);[m
+[1mdiff --git a/app/screens/CreateKioskScreen/CreateKioskScreen.js b/app/screens/CreateKioskScreen/CreateKioskScreen.js[m
+[1mindex 71d3d1d..5da6033 100644[m
+[1m--- a/app/screens/CreateKioskScreen/CreateKioskScreen.js[m
+[1m+++ b/app/screens/CreateKioskScreen/CreateKioskScreen.js[m
+[36m@@ -166,20 +166,20 @@[m [mexport default function CreateKioskScreen(props) {[m
+ 					/>[m
+ 				</View>[m
+ 				{ alert.showAlert && [m
+[31m-				        <ShowAlert[m
+[31m-							show={alert.showAlert}[m
+[31m-							showProgress={false}[m
+[31m-							title={alert.alertHead}[m
+[31m-							message={alert.alertBody}[m
+[31m-							showCancelButton={false}[m
+[31m-							showConfirmButton[m
+[31m-							confirmText='Ok'[m
+[31m-							confirmButtonColor={Colors.red}[m
+[31m-							onConfirmPressed={() => {[m
+[31m-								setAlert(state => ({...state, showAlert: false, alertHead: '', alertBody: ''}))[m
+[31m-							}}[m
+[31m-				        />[m
+[31m-					}[m
+[32m+[m			[32m        <ShowAlert[m
+[32m+[m						[32mshow={alert.showAlert}[m
+[32m+[m						[32mshowProgress={false}[m
+[32m+[m						[32mtitle={alert.alertHead}[m
+[32m+[m						[32mmessage={alert.alertBody}[m
+[32m+[m						[32mshowCancelButton={false}[m
+[32m+[m						[32mshowConfirmButton[m
+[32m+[m						[32mconfirmText='Ok'[m
+[32m+[m						[32mconfirmButtonColor={Colors.red}[m
+[32m+[m						[32monConfirmPressed={() => {[m
+[32m+[m							[32msetAlert(state => ({...state, showAlert: false, alertHead: '', alertBody: ''}))[m
+[32m+[m						[32m}}[m
+[32m+[m			[32m        />[m
+[32m+[m				[32m}[m
+ 			</View>[m
+ 		</TouchableWithoutFeedback>[m
+ 	);[m
+[1mdiff --git a/app/services/ApiService.js b/app/services/ApiService.js[m
+[1mindex 4e3bad8..75eecbf 100644[m
+[1m--- a/app/services/ApiService.js[m
+[1m+++ b/app/services/ApiService.js[m
+[36m@@ -24,7 +24,7 @@[m [mexport default {[m
+ 				current_password, password, password_confirmation[m
+ 			}[m
+ 		}[m
+[31m-		return this.makeAuthorizedRequest({method, url, data})[m
+[32m+[m		[32mreturn this.makeAuthorizedRequest({method, url, data});[m
+ [m
+ 	},[m
+ [m
+[1mdiff --git a/config/ReactotronConfig.js b/config/ReactotronConfig.js[m
+[1mindex 21e97a8..5c3b44b 100644[m
+[1m--- a/config/ReactotronConfig.js[m
+[1m+++ b/config/ReactotronConfig.js[m
+[36m@@ -2,7 +2,7 @@[m [mimport Reactotron from 'reactotron-react-native'[m
+ import { reactotronRedux } from 'reactotron-redux'[m
+ [m
+ const reactotron = Reactotron[m
+[31m-  .configure({ name: 'indico', host: '192.168.100.46' }) // controls connection & communication settings[m
+[32m+[m[32m  .configure({ name: 'indico', host: '192.168.100.15' }) // controls connection & communication settings[m
+   .useReactNative() // add all built-in react native plugins[m
+   .use(reactotronRedux())[m
+   .connect() // let's connect![m

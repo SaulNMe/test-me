@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "paddingVertical": 16,
+      },
+      Object {
+        "paddingHorizontal": 16,
+      },
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "backgroundColor": "#14A286",
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <LabelText
+      align=""
+      color="white"
+      text="text test"
+      weight=""
+    />
+  </Component>
+  <Component
+    style={
+      Array [
+        Object {
+          "marginLeft": 16,
+        },
+        Object {
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <PrimaryBtn
+      bgColor=""
+      disabled={false}
+      hasHorizontalMargin={false}
+      onPress={[Function]}
+      text="text button text"
+    />
+  </Component>
+</Component>
+`;

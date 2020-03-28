@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "marginHorizontal": 16,
+      },
+      Object {
+        "marginVertical": 16,
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Divider
+      color="blue"
+    />
+  </Component>
+  <Component
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "marginHorizontal": 8,
+        },
+      ]
+    }
+  >
+    <TinyText
+      align=""
+      color="blue"
+      text="text"
+      weight=""
+    />
+  </Component>
+  <Component
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Divider
+      color="blue"
+    />
+  </Component>
+</Component>
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<TouchableOpacity
+  activeOpacity={0.6}
+  onPress={[Function]}
+>
+  <Component
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginHorizontal": 16,
+        },
+        Object {
+          "alignItems": "center",
+        },
+        Object {
+          "paddingVertical": 8,
+        },
+      ]
+    }
+  >
+    <IconBox
+      bgColor="green"
+      iconName="x"
+    />
+    <Component
+      style={
+        Array [
+          Object {
+            "marginHorizontal": 8,
+          },
+          Object {
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <BodyText
+        align=""
+        color="dark"
+        text="text test"
+        weight=""
+      />
+    </Component>
+    <Icon
+      allowFontScaling={false}
+      color="#364350"
+      name="chevron-right"
+      size={24}
+    />
+  </Component>
+</TouchableOpacity>
+`;

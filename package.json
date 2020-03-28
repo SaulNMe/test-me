@@ -1,0 +1,63 @@
+{
+	"name": "qualificame-native",
+	"main": "node_modules/expo/AppEntry.js",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"eject": "expo eject",
+		"test": "node_modules/.bin/jest",
+		"test:watch": "node_modules/.bin/jest --watch",
+		"test:coverage": "node_modules/.bin/jest --coverage"
+	},
+	"jest": {
+		"preset": "jest-expo",
+		"setupFilesAfterEnv": [
+			"<rootDir>config/setupTests.js"
+		],
+		"snapshotSerializers": [
+			"enzyme-to-json/serializer"
+		]
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"expo": "^33.0.0",
+		"expo-asset": "^5.0.1",
+		"expo-barcode-scanner": "~5.0.1",
+		"expo-cli": "^2.19.1",
+		"expo-constants": "~5.0.1",
+		"expo-font": "~5.0.1",
+		"expo-linear-gradient": "~5.0.1",
+		"expo-permissions": "~5.0.1",
+		"global": "^4.3.2",
+		"moment": "^2.24.0",
+		"prop-types": "^15.7.2",
+		"react": "16.8.3",
+		"react-dom": "16",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+		"react-native-actionsheet": "^2.4.2",
+		"react-native-awesome-alerts": "^1.2.0",
+		"react-native-dotenv": "^0.2.0",
+		"react-native-keyboard-spacer": "^0.4.1",
+		"react-native-modal-datetime-picker": "^7.4.1",
+		"react-native-qrcode": "^0.2.7",
+		"react-navigation": "^3.11.0",
+		"react-query-hooks": "^0.0.4",
+		"react-redux": "^7.1.0",
+		"redux": "^4.0.1",
+		"redux-persist": "^5.10.0",
+		"redux-thunk": "^2.3.0",
+		"victory-native": "^32.0.2"
+	},
+	"devDependencies": {
+		"babel-preset-expo": "^5.0.0",
+		"enzyme": "^3.9.0",
+		"enzyme-adapter-react-16": "^1.12.1",
+		"enzyme-to-json": "^3.3.5",
+		"jest": "^24.8.0",
+		"jest-expo": "^33.0.0",
+		"reactotron-react-native": "^3.5.0",
+		"reactotron-redux": "^3.1.0"
+	},
+	"private": true
+}

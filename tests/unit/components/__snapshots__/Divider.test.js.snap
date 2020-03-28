@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "height": 1,
+        "width": "100%",
+      },
+      Object {
+        "backgroundColor": "#364350",
+      },
+    ]
+  }
+/>
+`;

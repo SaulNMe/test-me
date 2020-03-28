@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "borderRadius": 10,
+        "height": 48,
+        "width": 48,
+      },
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "backgroundColor": "#DCE9F7",
+      },
+    ]
+  }
+>
+  <Component
+    source={1}
+    style={
+      Object {
+        "height": 45,
+        "width": 45,
+      }
+    }
+  />
+</Component>
+`;

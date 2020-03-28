@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      },
+      Object {
+        "width": 255,
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 90,
+          "borderWidth": 1,
+          "height": 100,
+          "justifyContent": "center",
+          "width": 100,
+        },
+        Object {
+          "backgroundColor": "#EB3F3F",
+          "borderColor": "#EB3F3F",
+        },
+      ]
+    }
+  >
+    <Icon
+      allowFontScaling={false}
+      color="blue"
+      name="moon"
+      size={70}
+    />
+  </Component>
+  <Component>
+    <TitleText
+      align="center"
+      color="red"
+      text="test title"
+      weight=""
+    />
+  </Component>
+</Component>
+`;

@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders ad expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "height": 330,
+        "marginHorizontal": 80,
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Object {
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Component>
+      <Component
+        resizeMode="cover"
+        source={1}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 90,
+            "borderWidth": 1,
+            "height": 137,
+            "justifyContent": "center",
+            "width": 137,
+          }
+        }
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "paddingRight": 16,
+        }
+      }
+    >
+      <BodyText
+        align=""
+        color="red"
+        text="Text No 2"
+        weight="light"
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "marginLeft": 35,
+        }
+      }
+    >
+      <Component
+        resizeMode="cover"
+        source={1}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 90,
+            "borderWidth": 1,
+            "height": 107,
+            "justifyContent": "center",
+            "width": 107,
+          }
+        }
+      />
+    </Component>
+  </Component>
+  <Component
+    style={
+      Object {
+        "justifyContent": "space-evenly",
+      }
+    }
+  >
+    <Component
+      style={
+        Object {
+          "paddingLeft": 16,
+        }
+      }
+    >
+      <BodyText
+        align=""
+        color="red"
+        text="Text No 1"
+        weight="light"
+      />
+    </Component>
+    <Component>
+      <Component
+        resizeMode="cover"
+        source={1}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderRadius": 90,
+            "borderWidth": 1,
+            "height": 180,
+            "justifyContent": "center",
+            "width": 180,
+          }
+        }
+      />
+    </Component>
+    <Component
+      style={
+        Object {
+          "paddingLeft": 16,
+        }
+      }
+    >
+      <BodyText
+        align=""
+        color="red"
+        text="Text No 3"
+        weight="light"
+      />
+    </Component>
+  </Component>
+</Component>
+`;

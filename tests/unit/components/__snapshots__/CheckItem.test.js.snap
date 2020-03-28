@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+      Object {
+        "alignItems": "center",
+      },
+      Object {
+        "marginVertical": 4,
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Object {
+        "marginRight": 8,
+      }
+    }
+  >
+    <Icon
+      allowFontScaling={false}
+      color="#14A286"
+      name="check-square"
+      size={24}
+    />
+  </Component>
+  <BodyText
+    align=""
+    color="green"
+    text="test text"
+    weight=""
+  />
+</Component>
+`;

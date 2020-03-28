@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Fragment>
+  <Component
+    source={1}
+  />
+</Fragment>
+`;

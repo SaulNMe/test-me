@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      Object {
+        "paddingHorizontal": 16,
+      },
+    ]
+  }
+>
+  <Component
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <SubtitleText
+      align="center"
+      color="dark"
+      text="Ups... Parece que hubo un error"
+      weight=""
+    />
+  </Component>
+  <Component
+    style={
+      Array [
+        Object {
+          "marginVertical": 16,
+        },
+      ]
+    }
+  >
+    <PrimaryBtn
+      bgColor="blue"
+      disabled={false}
+      hasHorizontalMargin={true}
+      onPress={[Function]}
+      text="Volver a intentar"
+    />
+  </Component>
+</Component>
+`;

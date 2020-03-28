@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Component>
+  <Divider
+    color="gray"
+  />
+  <Component
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+        },
+        Object {
+          "marginHorizontal": 16,
+        },
+        Object {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <IconBox
+      bgColor="green"
+      iconName="user"
+    />
+    <Component
+      style={
+        Array [
+          Object {
+            "marginLeft": 16,
+          },
+          Object {
+            "marginVertical": 8,
+          },
+        ]
+      }
+    >
+      <SubtitleText
+        align=""
+        color="dark"
+        text="name"
+        weight=""
+      />
+      <SubtitleText
+        align=""
+        color="dark"
+        text="email"
+        weight="light"
+      />
+    </Component>
+  </Component>
+  <Component
+    style={
+      Object {
+        "marginBottom": 16,
+      }
+    }
+  >
+    <Divider
+      color="gray"
+    />
+  </Component>
+</Component>
+`;

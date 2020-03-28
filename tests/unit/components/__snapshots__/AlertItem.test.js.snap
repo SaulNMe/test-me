@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<TouchableOpacity
+  activeOpacity={0.6}
+  onPress={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+    }
+  }
+>
+  <Divider
+    color="gray"
+  />
+  <Component
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 16,
+        },
+        Object {
+          "marginVertical": 16,
+        },
+        Object {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <Component
+      style={
+        Object {
+          "flex": 2,
+        }
+      }
+    >
+      <BodyText
+        align=""
+        color=""
+        text="title test"
+        weight="bold"
+      />
+      <Component
+        style={
+          Array [
+            Object {
+              "flexWrap": "wrap",
+            },
+            Object {
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <LabelText
+          align=""
+          color="dark"
+          text="test description1"
+          weight="light"
+        />
+        <LabelText
+          align=""
+          color="green"
+          text="test description2"
+          weight="medium"
+        />
+        <LabelText
+          align=""
+          color="dark"
+          text="test description3"
+          weight="light"
+        />
+      </Component>
+    </Component>
+    <Component>
+      <TinyText
+        align=""
+        color="gray"
+        text="created"
+        weight=""
+      />
+      <Component
+        style={
+          Array [
+            Object {
+              "marginTop": 8,
+            },
+            Object {
+              "alignSelf": "flex-end",
+            },
+          ]
+        }
+      />
+    </Component>
+  </Component>
+  <Divider
+    color="gray"
+  />
+</TouchableOpacity>
+`;

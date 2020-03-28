@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering renders as expected 1`] = `
+<Fragment>
+  <Component
+    style={
+      Array [
+        Object {
+          "fontSize": 16,
+        },
+        Object {
+          "color": "#146DCA",
+        },
+        Object {
+          "fontWeight": "700",
+        },
+      ]
+    }
+  >
+    test text
+  </Component>
+</Fragment>
+`;
