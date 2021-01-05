@@ -20,7 +20,7 @@
 		]
 	},
 	"dependencies": {
-		"axios": "^0.18.0",
+		"axios": "^0.21.1",
 		"expo": "^33.0.0",
 		"expo-asset": "^5.0.1",
 		"expo-barcode-scanner": "~5.0.1",
