@@ -30,7 +30,7 @@
 		"expo-linear-gradient": "~5.0.1",
 		"expo-permissions": "~5.0.1",
 		"global": "^4.3.2",
-		"moment": "^2.24.0",
+		"moment": "^2.29.4",
 		"prop-types": "^15.7.2",
 		"react": "16.8.3",
 		"react-dom": "16",
